@@ -6,6 +6,9 @@ const router = Router();
 // router.route("/").get(rh.setData);
 router.route("/").get(rh.setData);
 router.route("/get-data").get(rh.getData);
+router.route("/update-data").put(rh.updateData);
+router.route("/delete-data").delete(rh.deleteData);
+
 export function users(req ,res) {
     try{
          let id= req.params;
