@@ -1,12 +1,24 @@
 import mongoose from "mongoose";
 
 const Schema = new mongoose.Schema ({
-    id: {
-        type: Number
+username: {
+        type:String
     },
-    name: {
+    firstname: {
         type: String
 
+    },
+    lastname:{
+        type:String
+    },
+    email:{
+        type:String
+    },
+    phone:{
+        type:Number
+    },
+    password:{
+        type:String
     }
 })
 
